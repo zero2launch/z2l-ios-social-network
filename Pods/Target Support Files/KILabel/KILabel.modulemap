@@ -1,0 +1,6 @@
+framework module KILabel {
+  umbrella header "KILabel-umbrella.h"
+
+  export *
+  module * { export * }
+}
