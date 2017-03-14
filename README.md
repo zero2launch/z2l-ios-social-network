@@ -3,7 +3,7 @@ This is the source code for the top-rated course ["Build Instagram to Learn Swif
 
 &nbsp;
 
-![demo-short-xlight](https://cloud.githubusercontent.com/assets/24752658/23870206/1582fe36-07fc-11e7-885b-3f0eff2b731f.gif)
+![demo-short-xlight](https://cloud.githubusercontent.com/assets/24752658/23903196/0d1a8fe0-089a-11e7-9f44-3ebd389fa596.gif)
 
 &nbsp;
 
