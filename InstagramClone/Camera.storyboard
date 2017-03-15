@@ -133,7 +133,7 @@
                                     <constraint firstItem="4ao-Xb-rTh" firstAttribute="centerY" secondItem="lEz-ab-wXa" secondAttribute="centerY" id="mGg-FL-yQM"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B68-3k-3sY">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B68-3k-3sY">
                                 <rect key="frame" x="0.0" y="64" width="375" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="Xal-R8-oA6"/>

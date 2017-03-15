@@ -48,14 +48,9 @@ class HomeTableViewCell: UITableViewCell {
     
     func updateView() {
         captionLabel.text = post?.caption
-        print("ratio: \(post?.ratio)")
-    //    ratio = widthPhoto / heightPhoto
-     //   heightPhoto = widthPhoto / ratio
         if let ratio = post?.ratio {
-            print("frame post Image: \(postImageView.frame)")
             heightConstraintPhoto.constant = UIScreen.main.bounds.width / ratio
             layoutIfNeeded()
-            print("frame post Image: \(postImageView.frame)")
 
         }
         if let photoUrlString = post?.photoUrl {
@@ -63,11 +58,11 @@ class HomeTableViewCell: UITableViewCell {
             postImageView.sd_setImage(with: photoUrl)
         }
         if let videoUrlString = post?.videoUrl, let videoUrl = URL(string: videoUrlString) {
-            print("videoUrlString: \(videoUrlString)")
             self.volumeView.isHidden = false
             player = AVPlayer(url: videoUrl)
             playerLayer = AVPlayerLayer(player: player)
             playerLayer?.frame = postImageView.frame
+            playerLayer?.frame.size.width = UIScreen.main.bounds.width
             self.contentView.layer.addSublayer(playerLayer!)
             self.volumeView.layer.zPosition = 1
             player?.play()
@@ -76,17 +71,17 @@ class HomeTableViewCell: UITableViewCell {
         
         self.updateLike(post: self.post!)
     }
-    @IBAction func volumeButton_TouchUpInSide(_ sender: Any) {
+    @IBAction func volumeButton_TouchUpInSide(_ sender: UIButton) {
         if isMuted {
             isMuted = !isMuted
             volumeButton.setImage(UIImage(named: "Icon_Volume"), for: UIControlState.normal)
         } else {
             isMuted = !isMuted
             volumeButton.setImage(UIImage(named: "Icon_Mute"), for: UIControlState.normal)
-
+            
         }
         player?.isMuted = isMuted
-    }
+    } 
     
     func updateLike(post: Post) {
         

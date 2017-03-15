@@ -100,7 +100,7 @@
                                                             </constraints>
                                                             <state key="normal" image="Icon_Mute"/>
                                                             <connections>
-                                                                <action selector="volumeButton_TouchUpInSide:" destination="VoG-1z-zvf" eventType="touchUpInside" id="sjQ-hF-KC9"/>
+                                                                <action selector="volumeButton_TouchUpInSide:" destination="VoG-1z-zvf" eventType="touchUpInside" id="a22-S0-flI"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -222,7 +222,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TIW-Bx-GZc">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TIW-Bx-GZc">
                                                     <rect key="frame" x="15" y="15" width="36" height="36"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="36" id="N8h-sw-5oo"/>
@@ -368,6 +368,6 @@
         <image name="share" width="37" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ic9-fE-QGT"/>
+        <segue reference="tl5-Cp-x7c"/>
     </inferredMetricsTieBreakers>
 </document>

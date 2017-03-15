@@ -129,7 +129,7 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3by-Zc-S2L">
                                                     <rect key="frame" x="0.0" y="59" width="375" height="320"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="320" id="Qig-BL-26u"/>
+                                                        <constraint firstAttribute="height" priority="999" constant="320" id="Qig-BL-26u"/>
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="RRA-1o-oU1">
@@ -169,12 +169,15 @@
                                                     <rect key="frame" x="10" y="345" width="24" height="24"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jb-1M-Ds3">
-                                                            <rect key="frame" x="6.5" y="6.5" width="12" height="12"/>
+                                                            <rect key="frame" x="6" y="6" width="12" height="12"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="12" id="XAW-ET-4a1"/>
                                                                 <constraint firstAttribute="height" constant="12" id="ZKd-Hs-fNJ"/>
                                                             </constraints>
                                                             <state key="normal" image="Icon_Mute"/>
+                                                            <connections>
+                                                                <action selector="volumeButton_TouchUpInSide:" destination="8jG-Wc-arF" eventType="touchUpInside" id="sEz-wW-jpc"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -299,7 +302,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6cg-NN-zbs">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6cg-NN-zbs">
                                                     <rect key="frame" x="15" y="10" width="60" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="IKN-He-0rH"/>
