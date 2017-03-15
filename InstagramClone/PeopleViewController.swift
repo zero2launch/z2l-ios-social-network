@@ -14,7 +14,7 @@ class PeopleViewController: UIViewController {
     var users: [User] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "People"
         loadUsers()
     }
     
